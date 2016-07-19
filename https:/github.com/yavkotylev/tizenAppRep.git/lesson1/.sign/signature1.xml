@@ -8,7 +8,7 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>OKJf+B/qzVXP4bll0Qk0vDvdZf/uvB0pnnGiHQSr3Zg=</DigestValue>
+<DigestValue>yKowqvrJqgMrvxbVh/8py93betfYrB2F6p7w8BpG2eI=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -32,11 +32,11 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>S1rVGyjk+pbxvGDzRHx5KsA7YlcmBNcmz2Yem01yPHI=</DigestValue>
+<DigestValue>GwZu6jOLJo1rE2zLLeQRZ/N3DWFfxjJmEtDVpYHCIDQ=</DigestValue>
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>BKVxGziEnjYhuIge0iwFHIRlIkF0gtN4hJAugt6mMGE=</DigestValue>
+<DigestValue>vHOVj0FjKvRVcyx0V/xYl+NbDwLccpEp3Rx4Brqq4MU=</DigestValue>
 </Reference>
 <Reference URI="lib%2Fjquery.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -799,11 +799,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-dWrfvHHes/w34C10ZEG49yXq7x0MZyrCdOuzXr3+iMZUcCfIxzsRn71CvKCBWz/3ByQQ+xuZ2ew8
-RDBYPAdpoAWtOAYJf/HcYmsJMbYB+RIl+r/z1LHknWdnIgAm0WpSD1yUJ9SD11drmLnIH5vceao8
-PCJEed5xA8uYzXyuFQQrHouW3X/256pPa0DLYGHMqjKP0wQTI6kYVNlQoucAdUU71yQEEvtVnWvg
-TG79rx5WQGoyf+HVrszNiJnUu6PttT0m0PFLWcjCacbBdwxpClELcXbRdjm9AUwOq6eNegaUwPGU
-poZnwHyZbRsawdUDk2nR7uUkNfYcQvfmhVUDXw==
+iZRJyDonV4sBbdPgyetmUtym2R9zFugtR88TO1e2P6BQOnpKGf+BkbVcISAsmBYi10xEOjbIU/Vb
+E9PY11FP+qAeaCBMlMoXsmmqKvlRE0qyoOiU3DZ87F13MZEArVMTL0v/uCb9XQD9FCzx7Yn0qUI6
+wRRRZd8jgPFawDO7I82Ao/w7ts3GrKD1FhAaDdNuxzaps8Ihkqf7LVJY3uCwMlZcSFD9FLnswaY5
+b3CFG3ZiLVsItFUtdhQLwsyakcRQMUQui9OSrXrENmwZcbCc2b46FMbQc2oBvZvyuLfDEuUVWTp+
+1Acb1h4nY/yWKyzkIR5xQBx55CKPM+K6N57ldw==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
