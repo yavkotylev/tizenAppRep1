@@ -27,6 +27,28 @@ function changeJQInf(){
 	$("#JQInf3").css({'color':'black'});
 }
 
+
+function drawChess(){
+	var c=document.getElementById("chessTable");
+	var ctx=c.getContext("2d");
+	var flag = true;
+	ctx.fillStyle = 'white';
+	for (i = 0; i < 8; i++){
+		
+		for (j = 0; j < 8; j++){
+			if (flag ==  true){
+				ctx.fillStyle = 'white';
+			}
+			else{
+				ctx.fillStyle = 'black';
+			}
+			flag = !flag;
+			ctx.fillRect(i * 40, j * 40, 40 , 40);
+		}
+		flag = !flag;
+	}
+	ctx.stroke();
+}
 function startTime() {
 	var today = new Date();
 	var h = today.getHours();

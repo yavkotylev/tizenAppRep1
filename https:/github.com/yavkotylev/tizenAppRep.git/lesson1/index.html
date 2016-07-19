@@ -60,6 +60,14 @@
 			 		<button class="ui-li-anchor"><a href="#six">Show Video Youtube</a></button>
 				</div>
 				
+				<div id="divbutton7">
+			 		<button class="ui-li-anchor"><a href="#canvas">Draw text</a></button>
+				</div>
+				
+				<div id="divbutton8">
+			 		<button class="ui-li-anchor"><a href="#chess">Draw chess</a></button>
+				</div>
+				
 		      <p id = "inf" > </p>
 			
 		</div><!-- /content -->
@@ -120,6 +128,47 @@
 		<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
 		</div><!-- /content -->
 	</div><!-- /page six -->
+	
+	
+	<div class="ui-page" id="canvas">
+		<div class="ui-header">
+			<h1>Canvas</h1>
+		</div><!-- /header -->
+		<div class="ui-content" id = "Video">
+		
+		<canvas id='draw' width='240' height='180' style='border:1px solid;'></canvas> 
+		<script type='text/javascript'>
+			var canvas=document.getElementById("draw")
+			var x=canvas.getContext("2d");
+			x.font = '30pt Calibri'
+			x.fillText("Tizen", 10, 50);  
+			x.fillStyle = 'blue';
+			x.fillText("Javascript", 100, 70); 
+			x.fillText("canvas", 60, 120);
+			x.fillStyle = 'red';
+			x.fillText("HTML 5", 20, 110);
+		</script>
+		
+		<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	</div><!-- /page canvas -->
+	
+	
+	
+	<div class="ui-page" id="chess">
+		<div class="ui-header">
+			<h1>Canvas</h1>
+		</div><!-- /header -->
+		<div class="ui-content" id = "chess">
+		<canvas id='chessTable' width='320' height='320' style='border:1px solid;'></canvas> 
+		<div id="divbuttonChess">
+		        <button onclick="drawChess();">Draw Chess</button>
+		</div>
+	
+		
+		<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	</div><!-- /page chess -->
 		
 	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
 	<script src="./js/main.js"></script>	
