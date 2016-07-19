@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="./lib/jquery.js"></script>
     <meta charset="utf-8" />
    <!--   //используется для установки ширины и начального масштаба для окна просмотра на мобильных устройствах
     // width=device-width, ширина страницы выбирается в соответствии с размером экрана устройства в аппаратно-независимых пикселях
@@ -13,53 +14,118 @@
 
     <title>Tizen Web IDE - Tizen - Tizen basic Application</title>
 
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet"  href="./lib/tau/mobile/theme/default/tau.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
 
 <body>
-  <header>
-    <hgroup>
-      <h1>Tizen app</h1>
-      <h2> template of tizen</h2>
-    </hgroup>
-  </header>
+	<div class="ui-page" id="one">
+
+		<div class="ui-header" id = "imageTizen32">
+			<h1>Multi-page application</h1>
+			<img src="images/tizen_32.png" id='image_X' width="32"/> Application Name
+		</div><!-- /header -->
+		
+		
+		<div class="ui-content">
+			<h2>One</h2>
+			<p>
+				This is a multi-page boilerplate template that you can copy to build
+				your first Tizen Web UI Framework page. This template contains multiple "page"
+				containers inside.
+				
+				
+			</p>
+			<div id="divbutton1">
+		        <button onclick="startTime();">Clock</button>
+		      </div>
+		      <div id="divbutton2">
+		        <button onclick="deleteImage();">Delete image</button>
+		      </div>
+		      
+		      
+		      <div id="divbutton3">
+		        <button onclick="Inf();">Information</button>
+		      </div>
+		     
+				<div id="divbutton4">
+			 		<button class="ui-li-anchor"><a href="#three">Change style</a></button>
+				</div>
+				
+				<div id="divbutton5">
+			 		<button class="ui-li-anchor"><a href="#five">Show Video</a></button>
+				</div>
+				
+				<div id="divbutton6">
+			 		<button class="ui-li-anchor"><a href="#six">Show Video Youtube</a></button>
+				</div>
+				
+		      <p id = "inf" > </p>
+			
+		</div><!-- /content -->
+	</div><!-- /page one -->
+	
+	<!-- Start of theird page: #three -->
+	<div class="ui-page" id="three">
+		<div class="ui-header">
+			<h1>Three</h1>
+		</div><!-- /header -->
+
+		<div class="ui-content" id = "JQInf">
+			<h2>Three</h2>
+			<div id = "JQInf1">
+				<p>jQuery is a cross-platform JavaScript library designed to</p>
+			</div>
+			<div id = "JQInf2">
+				simplify the client-side scripting of HTML.[3] jQuery is the most popular JavaScript library in 
+			</div>
+			<div id = "JQInf3">
+				use today, with installation on 65% of the top 10 million highest-trafficked sites on the Web.[4][5][6] 
+			</div>
+			<div id="divbutton1">
+		        <button onclick="changeJQInf();">Change style</button>
+		     </div>
+			<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	</div><!-- /page three -->
+	
+	<div class="ui-page" id="five">
+		<div class="ui-header">
+			<h1>Video</h1>
+		</div><!-- /header -->
+		<div class="ui-content" id = "Video">
+		
+		<video width="320" height="240" controls>
+  			<source src="_TouchCube.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		
+		<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	</div><!-- /page five -->
+	
+	
+	
+	
+	<div class="ui-page" id="six">
+		<div class="ui-header">
+			<h1>Video YouTube</h1>
+		</div><!-- /header -->
+		<div class="ui-content" id = "Video">
+		
+		<iframe width="200" height="150"
+			src="https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+		</iframe>
+		
+		<p><a href="#one" class="ui-btn ui-inline">Back to page "one"</a></p>
+		</div><!-- /content -->
+	</div><!-- /page six -->
+		
+	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js"></script>
+	<script src="./js/main.js"></script>	
+	
 
 
-
-  <nav>
-    <ul>
-       <li><a href="index.html">Home</a></li>
-    </ul>
-  </nav>
-
-  <article>
-
-      
-    </header>
-    	
-    	<div id = "imageTizen32" >
-    		
-        		<img src="images/tizen_32.png" id='image_X' width="32"/> Application Name
-      		
-    	</div>
-      <div id="divbutton1">
-        <button onclick="startTime();">Clock</button>
-      </div>
-      <div id="divbutton2">
-        <button onclick="deleteImage();">Delete image</button>
-      </div>
-      
-      
-      <div id="divbutton3">
-        <button onclick="Inf();">Information</button>
-      </div>
-      <p id = "inf" > </p>
-    </section>
-  </article>
-
-  <footer>
-    <p>&copy; 2012 Company Name. All rights reserved.</p>
-  </footer>    
+   
 </body>
 </html>

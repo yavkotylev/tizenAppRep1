@@ -1,6 +1,6 @@
 var startTime;
 var checkTime;
-var imgH = "<img src=\"images/tizen_32.png\" id=\'image_X\' width=\"32\"/>"
+var imgH = "<h1>Multi-page application</h1><img src=\"images/tizen_32.png\" id=\'image_X\' width=\"32\"/>"
 
 //Initialize function
 var init = function () {
@@ -21,6 +21,12 @@ var init = function () {
 // window.onload can work without <body onload="">
 window.onload = init;
 
+function changeJQInf(){
+	$("#JQInf1").css({'color': 'red'});
+	$("#JQInf2").css({'color': 'blue'});
+	$("#JQInf3").css({'color':'black'});
+}
+
 function startTime() {
 	var today = new Date();
 	var h = today.getHours();
@@ -35,11 +41,11 @@ function startTime() {
 
 function deleteImage(){
 	
-	if (document.getElementById('imageTizen32').innerHTML === ""){
+	if (document.getElementById('imageTizen32').innerHTML === "<h1>Multi-page application</h1>"){
 		document.getElementById('imageTizen32').innerHTML = imgH;
 	}
 	else{
-		document.getElementById('imageTizen32').innerHTML = "";
+		document.getElementById('imageTizen32').innerHTML = "<h1>Multi-page application</h1>";
 	}
 
 }
